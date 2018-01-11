@@ -1,0 +1,440 @@
+<Redis_Constraint>
+
+<!--
+	<configuration>
+		<name></name>
+		<option_type></option_type>
+		<constraint_type></constraint_type>
+		<constraint></constraint>
+	</configuration>
+-->
+	
+<!-- ----Numeric------ -->
+
+	<configuration>
+		<name>timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>tcp-keepalive</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>port</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>65535</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>tcp-backlog</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration> <!-- 这个可能有问题 -->
+		<name>bind</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>16</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>unixsocketperm</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>0777</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>databases</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>maxclients</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>maxmemory-samples</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>repl-ping-slave-period</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>repl-timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>repl-diskless-sync-delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>repl-backlog-ttl</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>hz</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>500</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>auto-aof-rewrite-percentage</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>cluster-migration-barrier</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>cluster-slave-validity-factor</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>client-output-buffer-limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave-announce-port</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>65535</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>min-slaves-to-write</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>min-slaves-max-lag</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>maxmemory</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>repl-backlog-size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>auto-aof-rewrite-min-size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>hash-max-ziplist-entries</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>hash-max-ziplist-value</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>set-max-intset-entries</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>zset-max-ziplist-entries</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>zset-max-ziplist-value</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>hll-sparse-max-bytes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>client-output-buffer-limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>list-compress-depth</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>list-max-ziplist-size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave-priority</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+<!-- ----Enumeration------ -->
+
+	<configuration>
+		<name>loglevel</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>debug</value>
+			<value>verbose</value>
+			<value>notice</value>
+			<value>warning</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>maxmemory-policy</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>volatile-lru</value>
+			<value>volatile-random</value>
+			<value>volatile-ttl</value>
+			<value>allkeys-lru</value>
+			<value>allkeys-random</value>
+			<value>noeviction</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>appendfsync</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>everysec</value>
+			<value>always</value>
+			<value>no</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>supervised</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>upstart</value>
+			<value>systemd</value>
+			<value>auto</value>
+			<value>no</value>
+		</constraint>
+	</configuration>
+	
+	
+	
+<!-- ----Semantic Type------ -->
+
+	<configuration>
+		<name>logfile</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>cluster-config-file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>dir</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>logfile</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+
+
+	
+	
+</Redis_Constraint>

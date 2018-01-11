@@ -1,0 +1,363 @@
+<Postfix_Constraint>
+
+<!--
+	<configuration>
+		<name></name>
+		<option_type></option_type>
+		<constraint_type></constraint_type>
+		<constraint></constraint>
+	</configuration>
+-->
+	
+<!-- ----Numeric------ -->
+
+	<configuration>
+		<name>compatibility_level</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>default_process_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>max_use</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>dont_remove</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>line_length_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>512</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>hash_queue_depth</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>fork_attempts</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>deliver_lock_attempts</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>debug_peer_level</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>fault_injection_code</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>berkeley_db_create_buffer_size</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>berkeley_db_read_buffer_size</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>header_size_limit</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>header_address_token_limit</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>mime_nesting_limit</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>mime_boundary_length_limit</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>delay_logging_resolution_limit</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>6</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>tcp_windowsize</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>message_size_limit</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>lmdb_map_size</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>application_event_drain_time</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>max_idle</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>ipc_timeout</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>ipc_idle</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>ipc_ttl</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>trigger_timeout</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>fork_delay</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>deliver_lock_delay</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>stale_lock_time</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>daemon_timeout</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>in_flow_delay</name>>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>10</max>
+		</constraint>
+	</configuration>
+	
+	
+<!-- ----Semantic Type------ -->
+
+	<configuration>
+		<name>daemon_directory</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>command_directory</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>queue_directory</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>shlib_directory</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+
+	<configuration>
+		<name>data_directory</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	
+</Postfix_Constraint>

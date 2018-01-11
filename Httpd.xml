@@ -1,0 +1,366 @@
+<Httpd_Constraint>
+
+<!--
+	<configuration>
+		<name></name>
+		<option_type></option_type>
+		<constraint_type></constraint_type>
+		<constraint></constraint>
+	</configuration>
+-->
+	
+<!-- ----Numeric------ -->
+
+	<configuration>
+		<name>ServerName:port</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>65535</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>LimitRequestLine</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>LimitRequestFieldsize</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>LimitRequestFields</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>LimitXMLRequestBody</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>LimitInternalRecursion</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>MaxMemFree</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ThreadStackSize</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>LimitRequestBody</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INF</max>
+		</constraint>
+	</configuration>
+	
+<!-- ----Enumeration------ -->
+
+	<configuration>
+		<name>AddDefaultCharset</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>Off</value>
+			<value>On</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>AcceptPathInfo</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>on</value>
+			<value>off</value>
+			<value>default</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>AllowOverride</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>Limit</value>
+			<value>Options</value>
+			<value>FileInfo</value>
+			<value>AuthConfig</value>
+			<value>Indexes</value>
+			<value>Nonfatal</value>
+			<value>None</value>
+			<value>All</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>Options</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>Indexes</value>
+			<value>Includes</value>
+			<value>IncludesNOEXEC</value>
+			<value>FollowSymLinks</value>
+			<value>SymLinksIfOwnerMatch</value>
+			<value>ExecCGI</value>
+			<value>MultiViews</value>
+			<value>RunScripts</value>
+			<value>None</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>DefaultType</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>off</value>
+			<value>none</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>EnableMMAP</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>on</value>
+			<value>off</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>EnableSendfile</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>on</value>
+			<value>off</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>HostnameLookups</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>on</value>
+			<value>off</value>
+			<value>double</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>ServerSignature</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>On</value>
+			<value>Off</value>
+			<value>EMail</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>ErrorLogFormat</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>connection</value>
+			<value>request</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>UseCanonicalName</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>on</value>
+			<value>off</value>
+			<value>dns</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>UseCanonicalPhysicalPort</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>on</value>
+			<value>off</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>ServerTokens</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>OS</value>
+			<value>Min</value>
+			<value>Major</value>
+			<value>Minor</value>
+			<value>Prod</value>
+			<value>Full</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>MaxRanges</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>none</value>
+			<value>default</value>
+			<value>unlimited</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>MaxRangeOverlaps</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>none</value>
+			<value>default</value>
+			<value>unlimited</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>MaxRangeReversals</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>none</value>
+			<value>default</value>
+			<value>unlimited</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>AllowEncodedSlashes</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>on</value>
+			<value>off</value>
+			<value>nodecode</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>EnableExceptionHook</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>on</value>
+			<value>off</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>TraceEnable</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>on</value>
+			<value>off</value>
+			<value>extemded</value>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>ProtocolsHonorOrder</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>on</value>
+			<value>off</value>
+		</constraint>
+	</configuration>
+	
+	
+	
+<!-- ----Semantic Type------ -->
+
+	<configuration>
+		<name>DocumentRoot</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ServerRoot</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>DefaultRuntimeDir</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>CoreDumpDirectory</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+
+	
+	
+</Httpd_Constraint>

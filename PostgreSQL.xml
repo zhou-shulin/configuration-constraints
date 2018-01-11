@@ -1,0 +1,1539 @@
+<Postgresql_Constraint>
+
+
+	<configuration>
+		<name></name>
+		<option_type></option_type>
+		<constraint_type></constraint_type>
+		<constraint></constraint>
+	</configuration>
+	
+	
+<!-- ----Numeric------ -->
+
+	<configuration>
+		<name>archive_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX/2</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>post_auth_delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX/1000000</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>default_statistics_target</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>10000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>from_collapse_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	
+	<configuration>
+		<name>join_collapse_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INT_MAX/1000000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>geqo_threshold</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>2</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>geqo_effort</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>10</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>geqo_pool_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>geqo_generations</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>deadlock_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_standby_archive_delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_standby_streaming_delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wal_receiver_status_interval</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX/1000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wal_receiver_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_connections</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>0x7fffff</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>superuser_reserved_connections</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>0x7fffff</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>shared_buffers</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>16</min>
+			<max>INT_MAX/2</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>temp_buffers</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>100</min>
+			<max>INT_MAX/2</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>port</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>65535</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>unix_socket_permissions</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0000</min>
+			<max>0777</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_file_mode</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0000</min>
+			<max>0777</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>work_mem</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>64</min>
+			<max>INT_MAX/1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>maintenance_work_mem</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>INT_MAX/1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_stack_depth</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>100</min>
+			<max>INT_MAX/1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>temp_file_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>vacuum_cost_page_hit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>10000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>vacuum_cost_page_miss</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>10000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>vacuum_cost_page_dirty</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>10000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>vacuum_cost_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>10000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>vacuum_cost_delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>100</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_vacuum_cost_delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>100</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_vacuum_cost_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>10000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_files_per_process</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>25</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_prepared_transactions</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>0x7fffff</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>trace_lock_oidmin</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>trace_lock_table</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>statement_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>lock_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>vacuum_freeze_min_age</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1000000000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>vacuum_freeze_table_age</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>2000000000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>vacuum_multixact_freeze_min_age</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1000000000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>vacuum_multixact_freeze_table_age</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>2000000000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>vacuum_defer_cleanup_age</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1000000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_locks_per_transaction</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>10</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_pred_locks_per_transaction</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>10</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>authentication_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>600</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>pre_auth_delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>60</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wal_keep_segments</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>min_wal_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>2</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_wal_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>2</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>checkpoint_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>30</min>
+			<max>3600</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>checkpoint_warning</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wal_buffers</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>(INT_MAX / XLOG_BLCKSZ)</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wal_writer_delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>10000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_wal_senders</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>0x7fffff</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_replication_slots</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>0x7fffff</max>
+		</constraint>
+	</configuration>
+
+	<configuration>
+		<name>wal_sender_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>commit_delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>100000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>commit_siblings</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>extra_float_digits</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>0x7fffff</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_min_duration_statement</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_autovacuum_min_duration</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>bgwriter_delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>10</min>
+			<max>10000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>bgwriter_lru_maxpages</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>effective_io_concurrency</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_worker_processes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>0x7fffff</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_rotation_age</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX/60</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_rotation_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX/1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_function_args</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>100</min>
+			<max>100</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_index_keys</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>32</min>
+			<max>32</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_identifier_length</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>63</min>
+			<max>63</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>block_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>8192</min>
+			<max>8192</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>segment_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>131072</min>
+			<max>131072</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wal_block_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>8192</min>
+			<max>8192</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wal_retrieve_retry_interval</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wal_segment_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>2048</min>
+			<max>2048</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_naptime</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INT_MAX/1000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_vacuum_threshold</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_analyze_threshold</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_freeze_max_age</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>100000</min>
+			<max>2000000000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_multixact_freeze_max_age</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>100000</min>
+			<max>2000000000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_max_workers</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>0x7fffff</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_work_mem</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>INT_MAX/1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>tcp_keepalives_idle</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>tcp_keepalives_interval</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ssl_renegotiation_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>tcp_keepalives_count</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>gin_fuzzy_search_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>effective_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>server_version_num</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>90506</min>
+			<max>90506</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_temp_files</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>INT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>track_activity_query_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>100</min>
+			<max>102400</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>gin_pending_list_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>64</min>
+			<max>INT_MAX/1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>seq_page_cost</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>DBL_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>random_page_cost</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>DBL_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>cpu_tuple_cost</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>DBL_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>cpu_index_tuple_cost</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>DBL_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>cpu_operator_cost</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>DBL_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>cursor_tuple_fraction</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0.0</min>
+			<max>1.0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>geqo_selection_bias</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1.5</min>
+			<max>2.0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>geqo_seed</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0.0</min>
+			<max>1.0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>bgwriter_lru_multiplier</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0.0</min>
+			<max>10.0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>seed</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1.0</min>
+			<max>1.0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_vacuum_scale_factor</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0.0</min>
+			<max>100.0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>autovacuum_analyze_scale_factor</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0.0</min>
+			<max>100.0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>checkpoint_completion_target</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0.0</min>
+			<max>1.0</max>
+		</constraint>
+	</configuration>
+	
+	
+<!-- ----Enumeration------ -->
+
+	<configuration>
+		<name>backslash_quote</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>safe_encoding</value>
+			<value>on</value>
+			<value>off</value>
+			<value>true</value>
+			<value>false</value>
+			<value>yes</value>
+			<value>no</value>
+			<value>1</value>
+			<value>0</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>bytea_output</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>escape</value>
+			<value>hex</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>client_min_messages</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>debug</value>
+			<value>debug5</value>
+			<value>debug4</value>
+			<value>debug3</value>
+			<value>debug2</value>
+			<value>debug1</value>
+			<value>log</value>
+			<value>info</value>
+			<value>notice</value>
+			<value>warning</value>
+			<value>error</value>
+			<value>fatal</value>
+			<value>panic</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>constraint_exclusion</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>partition</value>
+			<value>on</value>
+			<value>off</value>
+			<value>true</value>
+			<value>false</value>
+			<value>yes</value>
+			<value>no</value>
+			<value>1</value>
+			<value>0</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>default_transaction_isolation</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>serializable</value>
+			<value>repeatable read</value>
+			<value>read committed</value>
+			<value>read uncommitted</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>IntervalStyle</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>postgres</value>
+			<value>postgres_verbose</value>
+			<value>sql_standard</value>
+			<value>iso_8601</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_error_verbosity</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>terse</value>
+			<value>default</value>
+			<value>verbose</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_min_messages</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>debug</value>
+			<value>debug5</value>
+			<value>debug4</value>
+			<value>debug3</value>
+			<value>debug2</value>
+			<value>debug1</value>
+			<value>log</value>
+			<value>info</value>
+			<value>notice</value>
+			<value>warning</value>
+			<value>error</value>
+			<value>fatal</value>
+			<value>panic</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_min_error_statement</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>debug</value>
+			<value>debug5</value>
+			<value>debug4</value>
+			<value>debug3</value>
+			<value>debug2</value>
+			<value>debug1</value>
+			<value>log</value>
+			<value>info</value>
+			<value>notice</value>
+			<value>warning</value>
+			<value>error</value>
+			<value>fatal</value>
+			<value>panic</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_statement</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>none</value>
+			<value>ddl</value>
+			<value>mod</value>
+			<value>all</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>syslog_facility</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>local0</value>
+			<value>local1</value>
+			<value>local2</value>
+			<value>local3</value>
+			<value>local4</value>
+			<value>local5</value>
+			<value>local6</value>
+			<value>local7</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>session_replication_role</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>origin</value>
+			<value>replica</value>
+			<value>local</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>synchronous_commit</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>local</value>
+			<value>remote_write</value>
+			<value>on</value>
+			<value>off</value>
+			<value>true</value>
+			<value>false</value>
+			<value>yes</value>
+			<value>no</value>
+			<value>1</value>
+			<value>0</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>archive_mode</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>always</value>
+			<value>on</value>
+			<value>off</value>
+			<value>true</value>
+			<value>false</value>
+			<value>yes</value>
+			<value>no</value>
+			<value>1</value>
+			<value>0</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>trace_recovery_messages</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>debug</value>
+			<value>debug5</value>
+			<value>debug4</value>
+			<value>debug3</value>
+			<value>debug2</value>
+			<value>debug1</value>
+			<value>log</value>
+			<value>info</value>
+			<value>notice</value>
+			<value>warning</value>
+			<value>error</value>
+			<value>fatal</value>
+			<value>panic</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>track_functions</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>none</value>
+			<value>pl</value>
+			<value>all</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wal_level</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>minimal</value>
+			<value>archive</value>
+			<value>hot_standby</value>
+			<value>logical</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>dynamic_shared_memory_type</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>posix</value>
+			<value>sysv</value>
+			<value>windows</value>
+			<value>mmap</value>
+			<value>none</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wal_sync_method</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>fsync</value>
+			<value>fsync_writethrough</value>
+			<value>fdatasync</value>
+			<value>open_sync</value>
+			<value>open_datasync</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>xmlbinary</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>base64</value>
+			<value>hex</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>xmloption</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>content</value>
+			<value>document</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>huge_pages</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>off</value>
+			<value>on</value>
+			<value>try</value>
+			<value>true</value>
+			<value>false</value>
+			<value>yes</value>
+			<value>no</value>
+			<value>1</value>
+			<value>0</value>
+		</constraint>
+	</configuration>
+	
+	
+<!-- ----Semantic Type------ -->
+
+	<configuration>
+		<name>dynamic_library_path</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>krb_server_keyfile</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_directory</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>unix_socket_directories</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>data_directory</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>config_file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>hba_file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ident_file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>external_pid_file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ssl_cert_file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ssl_key_file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ssl_ca_file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ssl_crl_file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>stats_temp_directory</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	
+<!-- ----Multi-value Relationship------ -->
+
+
+	<configuration>
+		<constraint_type>multi-value</constraint_type>
+		<name>max_wal_senders</name>
+		<option_type>numeric</option_type>
+		<constraint>less</constraint>
+		<name>max_connections</name>
+		<option_type>numeric</option_type>
+	</configuration>
+	
+	
+	<configuration>
+		<constraint_type>multi-value</constraint_type>
+		<name>superuser_reserved_connections</name>
+		<option_type>numeric</option_type>
+		<constraint>less</constraint>
+		<name>max_connections</name>
+		<option_type>numeric</option_type>
+	</configuration>
+	
+	
+	
+<!-- ----Value Control------ -->
+
+
+	<configuration>
+		<constraint_type>value control</constraint_type>
+		<name>geqo</name>
+		<option_type>bool(enumeration)</option_type>
+		<name>geqo_threshold</name>
+		<option_type>numeric</option_type>
+	</configuration>
+	
+	
+</Postgresql_Constraint>

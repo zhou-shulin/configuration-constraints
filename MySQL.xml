@@ -1,0 +1,2070 @@
+<Mysql_Constraint>
+
+
+	<configuration>
+		<name></name>
+		<option_type></option_type>
+		<constraint_type></constraint_type>
+		<constraint></constraint>
+	</configuration>
+	
+	
+<!-- ----Numeric------ -->
+
+	<configuration>
+		<name>performance_schema_events_waits_history_long_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_events_waits_history_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_cond_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_program_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_prepared_statements_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_file_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_socket_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_mutex_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>100*1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_rwlock_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>100*1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_table_handles</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_table_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_table_lock_stat</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_index_stat</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_thread_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_setup_actors_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_setup_objects_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_accounts_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_hosts_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_users_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_events_stages_history_long_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_events_stages_history_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_events_statements_history_long_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_events_statements_history_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_digests_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_events_transactions_history_long_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_events_transactions_history_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_digest_length</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_session_connect_attrs_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_metadata_locks</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>-1</min>
+			<max>100*1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_sql_text_length</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_digest_length</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>optimizer_trace_offset</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>LONG_MIN</min>
+			<max>LONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>optimizer_trace_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>LONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_cond_classes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>256</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_file_classes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>256</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_file_handles</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_socket_classes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>256</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_mutex_classes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>256</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_rwlock_classes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>256</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_thread_classes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>256</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_stage_classes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>256</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_statement_classes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>256</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_statement_stack</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>256</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>performance_schema_max_memory_classes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>auto_increment_increment</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>65535</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>auto_increment_offset</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>65535</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>back_log</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>65535</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>binlog_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4096</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>binlog_stmt_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4096</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>binlog_group_commit_sync_delay</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1000000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>binlog_group_commit_sync_no_delay_count</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1000000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>bulk_insert_buffer_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>connect_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>2</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>delayed_insert_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>delayed_insert_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>delayed_queue_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>expire_logs_days</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>99</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>flush_time</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ft_max_word_len</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>10</min>
+			<max>84</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ft_min_word_len</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>84</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>ft_query_expansion_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>interactive_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>join_buffer_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>128</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>lock_wait_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>rpl_stop_slave_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>2</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_throttle_queries_not_using_indexes</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_warnings</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>2</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_error_verbosity</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>3</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_allowed_packet</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>1024*1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_max_allowed_packet</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>1024*1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_binlog_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4096</min>
+			<max>ULLONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_binlog_stmt_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4096</min>
+			<max>ULLONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_binlog_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4096</min>
+			<max>1024*1024L*1024L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_connections</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>100000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_connect_errors</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_insert_delayed_threads</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>16384</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_delayed_threads</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>16384</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_error_count</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>65535</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_heap_table_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>16384</min>
+			<max>(ulonglong)~(intptr)0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>metadata_locks_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>metadata_locks_hash_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_seeks_for_key</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_length_for_sort_data</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4</min>
+			<max>8192*1024L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_points_in_geometry</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>3</min>
+			<max>1024*1024L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_prepared_stmt_count</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_relay_log_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1024L*1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_sort_length</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4</min>
+			<max>8192*1024L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_sp_recursion_depth</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>255</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_tmp_tables</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_write_lock_count</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>min_examined_row_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>net_buffer_length</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>net_read_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>net_write_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>net_retry_count</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>open_files_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>optimizer_prune_level</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>optimizer_search_depth</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>MAX_TABLES+1</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>range_optimizer_max_mem_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>parser_max_mem_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>10*1000*1000</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>optimizer_trace_max_mem_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>preload_buffer_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>1024*1024*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>read_buffer_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>8192</min>
+			<max>0x7FFFFFFFL</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>read_rnd_buffer_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>0x7FFFFFFFL</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>div_precision_increment</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>30</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>range_alloc_block_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4096</min>
+			<max>UINT32_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>multi_range_count</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>query_alloc_block_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>UINT_MAX32</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>query_prealloc_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>8192</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>thread_stack</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>128*1024</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>transaction_alloc_block_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>128*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>transaction_prealloc_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>128*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>query_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>query_cache_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>query_cache_min_res_unit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>server_id</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX32</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slow_launch_time</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>sort_buffer_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>32UL*1024UL</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_execution_time</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>table_definition_cache</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>400</min>
+			<max>512*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>table_open_cache</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>512*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>table_open_cache_instances</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>64</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>thread_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>16384</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>tmp_table_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>wait_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>profiling_history_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>100</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>default_week_format</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>7</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>group_concat_max_len</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>relay_log_space_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_transaction_retries</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_parallel_workers</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_pending_jobs_size_max</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>stored_program_cache</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>16</min>
+			<max>512*1024</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_binlog_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4096</min>
+			<max>ULLONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_binlog_stmt_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>4096</min>
+			<max>ULLONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_heap_table_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>16384</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>parser_max_mem_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>10*1000*1000</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>tmp_table_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>relay_log_space_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_pending_jobs_size_max</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1024</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>binlog_max_flush_queue_time</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>100000</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>default_password_lifetime</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX16</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>large_page_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>lower_case_table_names</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>2</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>pseudo_thread_id</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX32</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>old_passwords</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>2</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>port</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>65535</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>protocol_version</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>eq_range_index_dive_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX32</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>server_id_bits</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>32</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>report_port</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>65535</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_net_timeout</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>sql_slave_skip_counter</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>sync_relay_log</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>sync_relay_log_info</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_checkpoint_period</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>UINT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_checkpoint_group</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>32</min>
+			<max>524280</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>sync_binlog</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>sync_master_info</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>host_cache_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>65536</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>gtid_executed_compression_period</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX32</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_join_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>sql_select_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>long_query_time</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>3600L*24L*365L</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>timestamp</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>last_insert_id</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULLONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>identity</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULLONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>insert_id</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULLONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>rand_seed1</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>rand_seed2</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>error_count</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>ULLONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>key_buffer_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>~0</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>key_cache_block_size</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>512</min>
+			<max>1024*16</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>key_cache_division_limit</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>1</min>
+			<max>100</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>key_cache_age_threshold</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>100</min>
+			<max>ULLONG_MAX</max>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>max_user_connections</name>
+		<option_type>numeric</option_type>
+		<constraint_type>value range</constraint_type>
+		<constraint>
+			<min>0</min>
+			<max>UINT_MAX</max>
+		</constraint>
+	</configuration>
+	
+	
+<!-- ----Enumeration------ -->
+
+	<configuration>
+		<name>binlog_format</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>MIXED</value>
+			<value>STATEMENT</value>
+			<value>ROW</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>rbr_exec_mode</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>STRICT</value>
+			<value>IDEMPOTENT</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>binlog_row_image</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>MINIMAL</value>
+			<value>NOBLOB</value>
+			<value>FULL</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>session_track_gtids</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>OFF</value>
+			<value>OWN_GTID</value>
+			<value>ALL_GTIDS</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>master_info_repository</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>FILE</value>
+			<value>TABLE</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>relay_log_info_repository</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>FILE</value>
+			<value>TABLE</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>completion_type</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>NO_CHAIN</value>
+			<value>CHAIN</value>
+			<value>RELEASE</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>concurrent_insert</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>NEVER</value>
+			<value>AUTO</value>
+			<value>ALWAYS</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>delay_key_write</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>OFF</value>
+			<value>ON</value>
+			<value>ALL</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>event_scheduler</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>OFF</value>
+			<value>ON</value>
+			<value>DISABLED</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>transaction_write_set_extraction</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>OFF</value>
+			<value>MURMUR32</value>
+			<value>XXHASH64</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>binlog_error_action</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>IGNORE_ERROR</value>
+			<value>ABORT_SERVER</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>log_timestamps</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>UTC</value>
+			<value>SYSTEM</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>thread_handling</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>one-thread-per-connection</value>
+			<value>no-threads</value>
+			<value>loaded-dynamically</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>query_cache_type</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>OFF</value>
+			<value>ON</value>
+			<value>DEMAND</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_allow_batching</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>NO</value>
+			<value>YES</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_exec_mode</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>STRICT</value>
+			<value>IDEMPOTENT</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>slave_parallel_type</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>DATABASE</value>
+			<value>LOGICAL_CLOCK</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>session_track_state_change</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>NO</value>
+			<value>YES</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>binlog_checksum</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>NONE</value>
+			<value>CRC32</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>updatable_views_with_limit</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>NO</value>
+			<value>YES</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>internal_tmp_disk_storage_engine</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>MyISAM</value>
+			<value>InnoDB</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>block_encryption_mode</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>aes-128-ecb</value>
+			<value>aes-192-ecb</value>
+			<value>aes-256-ecb</value>
+			<value>aes-128-cbc</value>
+			<value>aes-192-cbc</value>
+			<value>aes-256-cbc</value>
+		</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>session_track_transaction_info</name>
+		<option_type>string</option_type>
+		<constraint_type>enumeration</constraint_type>
+		<constraint>
+			<value>OFF</value>
+			<value>STATE</value>
+			<value>CHARACTERISTICS</value>
+		</constraint>
+	</configuration>
+	
+	
+<!-- ----Semantic Type------ -->
+
+	<configuration>
+		<name>ft_stopword_file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>init_file</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>FILE</constraint>
+	</configuration>
+	
+	<configuration>
+		<name>tmpdir</name>
+		<option_type>string</option_type>
+		<constraint_type>semantic type</constraint_type>
+		<constraint>DIR</constraint>
+	</configuration>
+	
+	
+<!-- ----Multi-value Relationship------ -->
+
+
+	<configuration>
+		<constraint_type>multi-value</constraint_type>
+		<name>ft_min_word_len</name>
+		<option_type>numeric</option_type>
+		<constraint>less</constraint>
+		<name>ft_max_word_len</name>
+		<option_type>numeric</option_type>
+	</configuration>
+	
+	
+</Mysql_Constraint>
